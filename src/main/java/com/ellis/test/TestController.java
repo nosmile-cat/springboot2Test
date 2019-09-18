@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @Value(value = "${server.port}")
     private String port;
-    @RequestMapping("getTest")
+    @RequestMapping(value = "getTest")
     public String getTest(){
 
         return "this is test :" + port;
